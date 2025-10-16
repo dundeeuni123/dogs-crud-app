@@ -8,16 +8,76 @@ async function loadDogs() {
 
   dogs.forEach(dog => {
     const li = document.createElement('li');
-    li.textContent = `${dog.breed}${dog.sub_breed ? ' - ' + dog.sub_breed : ''}`;
 
-    const del = document.createElement('button');
-    del.textContent = 'Delete';
-    del.onclick = async () => {
+    // Text container
+    const textSpan = document.createElement('span');
+    textSpan.textContent = `${dog.breed}${dog.sub_breed ? ' - ' + dog.sub_breed : ''}`;
+    li.appendChild(textSpan);
+
+    // Edit button
+    const editBtn = document.createElement('button');
+    editBtn.textContent = 'Edit';
+    li.appendChild(editBtn);
+
+    // Delete button
+    const delBtn = document.createElement('button');
+    delBtn.textContent = 'Delete';
+    li.appendChild(delBtn);
+
+    // Delete functionality
+    delBtn.onclick = async () => {
       await fetch(`/api/dogs/${dog.id}`, { method: 'DELETE' });
       loadDogs();
     };
 
-    li.appendChild(del);
+    // Edit functionality
+    editBtn.onclick = () => {
+      // Replace text with inputs
+      const breedInput = document.createElement('input');
+      breedInput.type = 'text';
+      breedInput.value = dog.breed;
+
+      const subBreedInput = document.createElement('input');
+      subBreedInput.type = 'text';
+      subBreedInput.value = dog.sub_breed || '';
+
+      li.innerHTML = ''; // Clear current content
+      li.appendChild(breedInput);
+      li.appendChild(subBreedInput);
+
+      // Save button
+      const saveBtn = document.createElement('button');
+      saveBtn.textContent = 'Save';
+      li.appendChild(saveBtn);
+
+      // Cancel button
+      const cancelBtn = document.createElement('button');
+      cancelBtn.textContent = 'Cancel';
+      li.appendChild(cancelBtn);
+
+      saveBtn.onclick = async () => {
+        const updatedBreed = breedInput.value.trim();
+        const updatedSubBreed = subBreedInput.value.trim();
+
+        if (!updatedBreed) {
+          alert('Breed is required.');
+          return;
+        }
+
+        await fetch(`/api/dogs/${dog.id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ breed: updatedBreed, sub_breed: updatedSubBreed || null }),
+        });
+
+        loadDogs();
+      };
+
+      cancelBtn.onclick = () => {
+        loadDogs();
+      };
+    };
+
     dogList.appendChild(li);
   });
 }

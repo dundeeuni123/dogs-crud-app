@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -19,18 +20,37 @@ const db = new Low(adapter, defaultData);
 async function startServer() {
   await db.read();
 
-  if (!db.data || !Array.isArray(db.data.dogs)) {
-    db.data = { dogs: [] };
+  // If db is empty or dogs list is missing, seed from dogs.json
+  if (!db.data || !Array.isArray(db.data.dogs) || db.data.dogs.length === 0) {
+    // Read dogs.json and convert it into an array of dogs with id, breed, and sub_breed
+    const rawData = fs.readFileSync(path.join(__dirname, 'dogs.json'), 'utf-8');
+    const dogsObject = JSON.parse(rawData);
+
+    // Convert dogsObject (which has breeds as keys and sub-breeds as arrays) into array form
+    const dogsArray = [];
+
+    Object.entries(dogsObject).forEach(([breed, subBreeds]) => {
+      if (subBreeds.length === 0) {
+        dogsArray.push({ id: Date.now().toString() + Math.random(), breed, sub_breed: null });
+      } else {
+        subBreeds.forEach(sub => {
+          dogsArray.push({ id: Date.now().toString() + Math.random(), breed, sub_breed: sub });
+        });
+      }
+    });
+
+    db.data = { dogs: dogsArray };
     await db.write();
+    console.log('Database seeded from dogs.json');
   }
 
-  // GET all dogs
+  // GET /api/dogs
   app.get('/api/dogs', async (req, res) => {
     await db.read();
     res.json(db.data.dogs);
   });
 
-  // POST new dog
+  // POST /api/dogs
   app.post('/api/dogs', async (req, res) => {
     const { breed, sub_breed } = req.body;
     if (!breed) return res.status(400).json({ error: 'Breed is required' });
@@ -46,7 +66,7 @@ async function startServer() {
     res.status(201).json(newDog);
   });
 
-  // PUT update dog
+  // PUT /api/dogs/:id
   app.put('/api/dogs/:id', async (req, res) => {
     const { id } = req.params;
     const { breed, sub_breed } = req.body;
@@ -61,7 +81,7 @@ async function startServer() {
     res.json(dog);
   });
 
-  // DELETE dog
+  // DELETE /api/dogs/:id
   app.delete('/api/dogs/:id', async (req, res) => {
     const { id } = req.params;
     db.data.dogs = db.data.dogs.filter(d => d.id !== id);

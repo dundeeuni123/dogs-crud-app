@@ -1,8 +1,608 @@
 {
   "dogs": [
     {
-      "id": "1760612090596",
-      "breed": "Test1",
+      "id": "17606143606410.9366375498239632",
+      "breed": "affenpinscher",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.08621886030915205",
+      "breed": "african",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.8127217487708456",
+      "breed": "airedale",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.9765693229217716",
+      "breed": "akita",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.1386023803890808",
+      "breed": "appenzeller",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.31547552799825795",
+      "breed": "basenji",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.3190446058663563",
+      "breed": "beagle",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.2781261533322057",
+      "breed": "bluetick",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6181510131000358",
+      "breed": "borzoi",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.40614387344433744",
+      "breed": "bouvier",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6622974054371311",
+      "breed": "boxer",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.036300871168785775",
+      "breed": "brabancon",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.3846025181452346",
+      "breed": "briard",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.026527455987841453",
+      "breed": "bulldog",
+      "sub_breed": "boston"
+    },
+    {
+      "id": "17606143606410.24925391163725186",
+      "breed": "bulldog",
+      "sub_breed": "french"
+    },
+    {
+      "id": "17606143606410.5854265302678365",
+      "breed": "bullterrier",
+      "sub_breed": "staffordshire"
+    },
+    {
+      "id": "17606143606410.6327828224452987",
+      "breed": "cairn",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7157250667393769",
+      "breed": "chow",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7650706057556176",
+      "breed": "clumber",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.8818269471471158",
+      "breed": "collie",
+      "sub_breed": "border"
+    },
+    {
+      "id": "17606143606410.6346364617699856",
+      "breed": "corgi",
+      "sub_breed": "cardigan"
+    },
+    {
+      "id": "17606143606410.7986894323224261",
+      "breed": "dachshund",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.49888146748688933",
+      "breed": "dane",
+      "sub_breed": "great"
+    },
+    {
+      "id": "17606143606410.4557634328610567",
+      "breed": "deerhound",
+      "sub_breed": "scottish"
+    },
+    {
+      "id": "17606143606410.10246289574089995",
+      "breed": "dhole",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6655113421314767",
+      "breed": "dingo",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.5958504867376311",
+      "breed": "doberman",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.004165435107544635",
+      "breed": "elkhound",
+      "sub_breed": "norwegian"
+    },
+    {
+      "id": "17606143606410.9738620970567682",
+      "breed": "entlebucher",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.36470671231459995",
+      "breed": "eskimo",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.5202410375872817",
+      "breed": "germanshepherd",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.12464532610330958",
+      "breed": "greyhound",
+      "sub_breed": "italian"
+    },
+    {
+      "id": "17606143606410.26933692312248825",
+      "breed": "groenendael",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.5191901772960397",
+      "breed": "hound",
+      "sub_breed": "Ibizan"
+    },
+    {
+      "id": "17606143606410.9380603061258503",
+      "breed": "hound",
+      "sub_breed": "afghan"
+    },
+    {
+      "id": "17606143606410.7498687259981272",
+      "breed": "hound",
+      "sub_breed": "basset"
+    },
+    {
+      "id": "17606143606410.1319793975464798",
+      "breed": "hound",
+      "sub_breed": "blood"
+    },
+    {
+      "id": "17606143606410.0016351483452963222",
+      "breed": "hound",
+      "sub_breed": "english"
+    },
+    {
+      "id": "17606143606410.8482751811585612",
+      "breed": "hound",
+      "sub_breed": "walker"
+    },
+    {
+      "id": "17606143606410.6009249987945597",
+      "breed": "husky",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.44393494043321824",
+      "breed": "keeshond",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.018797865479620368",
+      "breed": "kelpie",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.8597817017885798",
+      "breed": "komondor",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6503842466821663",
+      "breed": "kuvasz",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7552249111238734",
+      "breed": "labrador",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7627276947820532",
+      "breed": "leonberg",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6761322836454464",
+      "breed": "lhasa",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.5573870990879386",
+      "breed": "malamute",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.615753858361018",
+      "breed": "malinois",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.20361127287690794",
+      "breed": "maltese",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.1262019322953516",
+      "breed": "mastiff",
+      "sub_breed": "bull"
+    },
+    {
+      "id": "17606143606410.5033362603493594",
+      "breed": "mastiff",
+      "sub_breed": "tibetan"
+    },
+    {
+      "id": "17606143606410.572853111754172",
+      "breed": "mexicanhairless",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.96108518748498",
+      "breed": "mountain",
+      "sub_breed": "bernese"
+    },
+    {
+      "id": "17606143606410.37041344981927926",
+      "breed": "mountain",
+      "sub_breed": "swiss"
+    },
+    {
+      "id": "17606143606410.15464372155140071",
+      "breed": "newfoundland",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7008948075385484",
+      "breed": "otterhound",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.7141604582577556",
+      "breed": "papillon",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.17825164279028227",
+      "breed": "pekinese",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.07105368806879175",
+      "breed": "pembroke",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.4787264192068079",
+      "breed": "pinscher",
+      "sub_breed": "miniature"
+    },
+    {
+      "id": "17606143606410.7530709097413146",
+      "breed": "pointer",
+      "sub_breed": "german"
+    },
+    {
+      "id": "17606143606410.6165558284016477",
+      "breed": "pomeranian",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.5592496274449772",
+      "breed": "poodle",
+      "sub_breed": "miniature"
+    },
+    {
+      "id": "17606143606410.8516359515439191",
+      "breed": "poodle",
+      "sub_breed": "standard"
+    },
+    {
+      "id": "17606143606410.5439271768860763",
+      "breed": "poodle",
+      "sub_breed": "toy"
+    },
+    {
+      "id": "17606143606410.25064826806245866",
+      "breed": "pug",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.4969538097148771",
+      "breed": "pyrenees",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.0775109737987556",
+      "breed": "redbone",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.2615426993504506",
+      "breed": "retriever",
+      "sub_breed": "chesapeake"
+    },
+    {
+      "id": "17606143606410.1351290287935596",
+      "breed": "retriever",
+      "sub_breed": "curly"
+    },
+    {
+      "id": "17606143606410.8420161865320346",
+      "breed": "retriever",
+      "sub_breed": "flatcoated"
+    },
+    {
+      "id": "17606143606410.41148705608567604",
+      "breed": "retriever",
+      "sub_breed": "golden"
+    },
+    {
+      "id": "17606143606410.6209002883013381",
+      "breed": "ridgeback",
+      "sub_breed": "rhodesian"
+    },
+    {
+      "id": "17606143606410.5554533570942686",
+      "breed": "rottweiler",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.8758904863992787",
+      "breed": "saluki",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.686725825895562",
+      "breed": "samoyed",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.6982206093556036",
+      "breed": "schipperke",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.30213955797600733",
+      "breed": "schnauzer",
+      "sub_breed": "giant"
+    },
+    {
+      "id": "17606143606410.650041025857661",
+      "breed": "schnauzer",
+      "sub_breed": "miniature"
+    },
+    {
+      "id": "17606143606410.18726024252861007",
+      "breed": "setter",
+      "sub_breed": "english"
+    },
+    {
+      "id": "17606143606410.2634732476069559",
+      "breed": "setter",
+      "sub_breed": "gordon"
+    },
+    {
+      "id": "17606143606410.4207576546837277",
+      "breed": "setter",
+      "sub_breed": "irish"
+    },
+    {
+      "id": "17606143606410.7677638438908774",
+      "breed": "sheepdog",
+      "sub_breed": "english"
+    },
+    {
+      "id": "17606143606410.2621747162908976",
+      "breed": "sheepdog",
+      "sub_breed": "shetland"
+    },
+    {
+      "id": "17606143606410.6301285208930065",
+      "breed": "shiba",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.4821114061163432",
+      "breed": "shihtzu",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.0896571636114194",
+      "breed": "spaniel",
+      "sub_breed": "blenheim"
+    },
+    {
+      "id": "17606143606410.415230516265811",
+      "breed": "spaniel",
+      "sub_breed": "brittany"
+    },
+    {
+      "id": "17606143606410.9516620110360405",
+      "breed": "spaniel",
+      "sub_breed": "cocker"
+    },
+    {
+      "id": "17606143606410.7185112452653293",
+      "breed": "spaniel",
+      "sub_breed": "irish"
+    },
+    {
+      "id": "17606143606410.11903480913582554",
+      "breed": "spaniel",
+      "sub_breed": "japanese"
+    },
+    {
+      "id": "17606143606410.8847391959122513",
+      "breed": "spaniel",
+      "sub_breed": "sussex"
+    },
+    {
+      "id": "17606143606410.033157939313496865",
+      "breed": "spaniel",
+      "sub_breed": "welsh"
+    },
+    {
+      "id": "17606143606410.4984473686654902",
+      "breed": "springer",
+      "sub_breed": "english"
+    },
+    {
+      "id": "17606143606410.7098639916487788",
+      "breed": "stbernard",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.774913793552056",
+      "breed": "terrier",
+      "sub_breed": "american"
+    },
+    {
+      "id": "17606143606410.8874742467467014",
+      "breed": "terrier",
+      "sub_breed": "australian"
+    },
+    {
+      "id": "17606143606410.5628878722349864",
+      "breed": "terrier",
+      "sub_breed": "bedlington"
+    },
+    {
+      "id": "17606143606410.5479149815745785",
+      "breed": "terrier",
+      "sub_breed": "border"
+    },
+    {
+      "id": "17606143606410.45064430637317976",
+      "breed": "terrier",
+      "sub_breed": "dandie"
+    },
+    {
+      "id": "17606143606410.34818537823521445",
+      "breed": "terrier",
+      "sub_breed": "fox"
+    },
+    {
+      "id": "17606143606410.017278215883471226",
+      "breed": "terrier",
+      "sub_breed": "irish"
+    },
+    {
+      "id": "17606143606410.2921700587129663",
+      "breed": "terrier",
+      "sub_breed": "kerryblue"
+    },
+    {
+      "id": "17606143606410.6428805488176783",
+      "breed": "terrier",
+      "sub_breed": "lakeland"
+    },
+    {
+      "id": "17606143606410.9825819832375431",
+      "breed": "terrier",
+      "sub_breed": "norfolk"
+    },
+    {
+      "id": "17606143606410.24760310374297867",
+      "breed": "terrier",
+      "sub_breed": "norwich"
+    },
+    {
+      "id": "17606143606410.07362494906171846",
+      "breed": "terrier",
+      "sub_breed": "patterdale"
+    },
+    {
+      "id": "17606143606410.811079965018553",
+      "breed": "terrier",
+      "sub_breed": "scottish"
+    },
+    {
+      "id": "17606143606410.22989784536367464",
+      "breed": "terrier",
+      "sub_breed": "sealyham"
+    },
+    {
+      "id": "17606143606410.3822628951820346",
+      "breed": "terrier",
+      "sub_breed": "silky"
+    },
+    {
+      "id": "17606143606410.8142524414935963",
+      "breed": "terrier",
+      "sub_breed": "tibetan"
+    },
+    {
+      "id": "17606143606410.32517574848279973",
+      "breed": "terrier",
+      "sub_breed": "toy"
+    },
+    {
+      "id": "17606143606410.8302835634701309",
+      "breed": "terrier",
+      "sub_breed": "westhighland"
+    },
+    {
+      "id": "17606143606410.05402523763606526",
+      "breed": "terrier",
+      "sub_breed": "wheaten"
+    },
+    {
+      "id": "17606143606410.4507727223614513",
+      "breed": "terrier",
+      "sub_breed": "yorkshire"
+    },
+    {
+      "id": "17606143606410.9782794140081992",
+      "breed": "vizsla",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.711236744665332",
+      "breed": "weimaraner",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.006441629384596137",
+      "breed": "whippet",
+      "sub_breed": null
+    },
+    {
+      "id": "17606143606410.9428019853923479",
+      "breed": "wolfhound",
+      "sub_breed": "irish"
+    },
+    {
+      "id": "1760614393001",
+      "breed": "chihuahua",
       "sub_breed": null
     }
   ]
