@@ -68,18 +68,18 @@ async function startServer() {
 
   // PUT /api/dogs/:id
   app.put('/api/dogs/:id', async (req, res) => {
-    const { id } = req.params;
-    const { breed, sub_breed } = req.body;
+  const { id } = req.params;
+  const { breed, sub_breed } = req.body;
 
-    const dog = db.data.dogs.find(d => d.id === id);
-    if (!dog) return res.status(404).json({ error: 'Dog not found' });
+  const dog = db.data.dogs.find(d => d.id === id);
+  if (!dog) return res.status(404).json({ error: 'Dog not found' });
 
-    dog.breed = breed || dog.breed;
-    dog.sub_breed = sub_breed || dog.sub_breed;
+  if (breed !== undefined) dog.breed = breed;
+  if (sub_breed !== undefined) dog.sub_breed = sub_breed;
 
-    await db.write();
-    res.json(dog);
-  });
+  await db.write();
+  res.json(dog);
+});
 
   // DELETE /api/dogs/:id
   app.delete('/api/dogs/:id', async (req, res) => {
